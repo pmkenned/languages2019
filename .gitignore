@@ -5,6 +5,7 @@
 *.slo
 *.lo
 *.o
+*.hi
 *.obj
 
 # Precompiled Headers
@@ -33,3 +34,4 @@
 
 # Other
 .*.swp
+build/
