@@ -3,7 +3,7 @@ all: Markov.java
 
 .PHONY: perf
 
-perf:
+perf: all
 	./do_n.sh 10
 
 .PHONY: clean
