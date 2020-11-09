@@ -85,9 +85,10 @@ class Chain {
             String suf = (String) s.elementAt(r);
             if (suf.equals(NONWORD))
                 break;
-            System.out.print(suf + ' ');
-            if (i % 20 == 0)
-                System.out.println();
+            System.out.println(suf);
+            //System.out.print(suf + ' ');
+            //if (i % 20 == 0)
+            //    System.out.println();
             prefix.pref.removeElementAt(0);
             prefix.pref.addElement(suf);
         }
