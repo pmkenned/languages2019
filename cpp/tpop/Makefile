@@ -1,24 +1,28 @@
 CXX=g++
-CFLAGS=-Wall -Wextra -Werror -O2
+CXXFLAGS=-Wall -Wextra -Werror -O2
 TARGET=markov
+BUILD_DIR=./build
 
 SRC = markov.cpp
-OBJ = $(SRC:%.cpp=%.o)
+OBJ = $(SRC:%.cpp=$(BUILD_DIR)/%.o)
 
-%.o: %.cpp
-	$(CXX) $(CFLAGS) -c $< -o $@
+.PHONY: all run perf clean
 
-$(TARGET): $(OBJ)
-	$(CXX) $(CFLAGS) $^ -o $@
+all: $(BUILD_DIR)/$(TARGET)
 
-all: $(TARGET)
+run: all
+	$(BUILD_DIR)/$(TARGET) < Genesis.txt
 
-.PHONY: perf
+$(BUILD_DIR)/%.o: %.cpp
+	mkdir -p $(BUILD_DIR)
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+$(BUILD_DIR)/$(TARGET): $(OBJ)
+	mkdir -p $(BUILD_DIR)
+	$(CXX) $(CXXFLAGS) $^ -o $@
 
 perf: all
 	./do_n.sh 10
 
-.PHONY: clean
-
 clean:
-	rm -f *.o $(TARGET)
+	rm -rf $(BUILD_DIR)

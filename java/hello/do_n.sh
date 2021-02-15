@@ -13,7 +13,7 @@ max="0"
 sum="0"
 avg="0"
 while [ "$i" -le "$N" ]; do
-    t="$(time ( ./build/markov < Genesis.txt > dump.txt) 2>&1 > /dev/null)"
+    t="$(time ( java Hello > /dev/null) 2>&1)"
     sum="$(echo $sum + $t | bc -l)"
     echo "$i: $t"
     i=$(($i + 1))
@@ -25,10 +25,8 @@ while [ "$i" -le "$N" ]; do
     fi
 done
 
-rm dump.txt
-
-echo  "MINIMUM: $min"
-echo  "MAXIMUM: $max"
+echo "MINIMUM: $min"
+echo "MAXIMUM: $max"
 
 avg="$(echo "$sum / $N" | bc -l)"
 echo -n "AVERAGE: "
