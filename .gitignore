@@ -38,3 +38,7 @@ build/
 
 # Java
 *.class
+
+# Zig
+zig-cache
+zig-out
