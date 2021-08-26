@@ -92,7 +92,7 @@ for x in [1,2,3]:
 - Sets: unordered collection with no duplicates
   - Created using curly braces (though with zero elements, this would create a dictionary) or `set()`
   - `&`: set intersection
-  - '|': set union
+  - `|`: set union
   - `-`: set difference
   - `^`: elements in either but not both
   - Set comprehension example: `a = {x for x in 'abracadabra' if x not in 'abc'}`
