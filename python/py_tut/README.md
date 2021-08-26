@@ -58,11 +58,75 @@
 - `*`-operator unpacks arguments out of a list or tuple: `range(*args)`
 - `**`-operator unpacks arguments out of a dict: `range(**kwargs)`
 - Lambda expressions: `lambda x: x + n`
-
-Left off at [4.7.7. Documentation Strings]()
+- Docstrings:
+  - Line should begin with a capital letter, end with a period
+  - If there are more lines in the documentation string, the second line should be blank
+- Example of function annotation: `def f(ham: str, eggs: str = 'eggs') -> str:`
+- Style guide: [PEP8](https://www.python.org/dev/peps/pep-0008/)
+  - `UpperCamelCase` for classes and `lowercase_with_underscores` for functions and methods
+  - UTF-8 is Python's default encoding
 
 ## [5. Data Structures]()
+
+- `sort()` can only be used on lists containing elements which can be pair-wise compared
+  - This excludes `None` (which cannot be compared with values of any other type), `str` with `int`, and complex numbers
+- Lists can be used as queues, but `collections.deque` is faster
+- List comprehension example: `squares = list(map(lambda x: x**2, range(10)))`
+  - Equivalent to: `squares = [x**2 for x in range(10)]`
+
+```python
+[(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]
+# the above is equivalent to:
+for x in [1,2,3]:
+    for y in [3,1,4]:
+        if x != y:
+            combs.append((x, y))
+```
+
+- The initial expression in a list comprehension can be any arbitrary expression, including another list comprehension
+- Example of nested list comprehensions which transpose a matrix: `[[row[i] for row in matrix] for i in range(4)]`
+- `del` keyword: can be used to remove elements or slices from a list, or entire variables
+- Tuples: similar to lists, but are immutable, usually contain elements of different types and usually accessed by indexing or unpacking
+  - For tuples with zero elements: `()`, for tuples with one element: `(x,)`
+  - Unpacking: `x, y, z = t`
+- Sets: unordered collection with no duplicates
+  - Created using curly braces (though with zero elements, this would create a dictionary) or `set()`
+  - `&`: set intersection
+  - '|': set union
+  - `-`: set difference
+  - `^`: elements in either but not both
+  - Set comprehension example: `a = {x for x in 'abracadabra' if x not in 'abc'}`
+- Dictionaries
+  - Keys can be any immutable type, such as `str`, `int`, or tuples containing only immutable types
+  - Lists cannot be used as keys since they are mutable
+  - `list(d)` returns a list of all the keys in dictionary `d` in insertion order
+  - Dictionary comprehension example: `{x: x**2 for x in (2, 4, 6)}`
+- Looping techniques
+  - Iterating a `dict` using `items()`: `for k, v in knights.items():`
+  - Example using `enumerate`: `for i, v in enumerate(['tic', 'tac', 'toe']):`
+  - Example using `zip`: `for q, a in zip(questions, answers):`
+- Conditions
+  - `in`, `not in`; `is`, `is not`
+  - `a < b == c`
+  - Boolean operators short-circuit, and when used as a value, equal the last evaluated argument
+  - Assignment inside expressions must use the walrus operator `:=`
+- Comparing sequences
+  - If one sequence is an initial sub-sequence of the other, the shorter sequence is the smaller (lesser) one
+
 ## [6. Modules]()
+
+- Within a module, the module’s name (as a string) is available as the value of the global variable `__name__`
+- Using `import`
+  - `import fibo`
+  - `from fibo import fib, fib2`
+  - `from fibo import *` imports all symbols except those beginning with `_`
+  - `import fibo as fib`
+  - `from fibo import fib as fibonacci`
+  - To reload a module during an interactive session: `import importlib; importlib.reload(modulename)`
+- `if __name__ == "__main__":`
+
+Left off at [6.1.2. The Module Search Path]()
+
 ## [7. Input and Output]()
 ## [8. Errors and Exceptions]()
 ## [9. Classes]()
@@ -72,12 +136,3 @@ Left off at [4.7.7. Documentation Strings]()
 ## [13. What Now?]()
 ## [14. Interactive Input Editing and History Substitution]()
 ## [15. Floating Point Arithmetic: Issues and Limitations]()
-
-## References
-
-- [The Python Language Reference](https://docs.python.org/3/reference/index.html#reference-index)
-- [The Python Standard Library](https://docs.python.org/3/library/index.html#library-index)
-- [Extending and Embedding the Python Interpreter](https://docs.python.org/3/extending/index.html)
-- [Python/C API Reference Manual](https://docs.python.org/3/c-api/index.html)
-- [Python HOWTOs](https://docs.python.org/3/howto/index.html)
-- [Python Frequently Asked Questions](https://docs.python.org/3/faq/index.html)

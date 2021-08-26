@@ -10,50 +10,53 @@ Top Ranking:
 * Java
 
 Close contenders:
-* C#
+* OCaml
+* Rust
 * Go
+* Clojure
+* Zig
+* Julia
+* awk
+* Jai
+* PHP
 * Ruby
+* C#
 * Kotlin
 * Elm
-* OCaml
-* Clojure
-* Scheme
 * ReasonML
 * Standard ML
 * Lua
 * F#
-* PHP
 * PL/SQL
 * C
 
 Others:
-* Pharo
-* Common Lisp
+* Vim Script
+* TypeScript
+* Bash
+* Nim
 * D
 * R
 * Swift
-* Rust
-* Objective-C
-* Dart
-* Delphi Pascal
 * Elixir
 * Erlang
-* CoffeeScript
+* Pharo
+* Scheme
+* Common Lisp
+* Dart
+* Delphi Pascal
 * Perl 5
 * Perl 6
 * Prolog
 * PureScript
-* TypeScript
-* Vim Script
 * x86-64 Assembly
 * MIPS Assembly
-* Nim
-* Julia
 * LFE
 * Crystal
 * Groovy
 * Emacs Lisp
-* Bash
 * Racket
 * Ballerina
 * CFML
+* Objective-C
+* CoffeeScript
