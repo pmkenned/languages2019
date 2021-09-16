@@ -11,6 +11,12 @@
 - [Python HOWTOs](https://docs.python.org/3/howto/index.html)
 - [Python Frequently Asked Questions](https://docs.python.org/3/faq/index.html)
 - [Real Python](https://realpython.com/)
+- [Understanding Python metaclasses](https://blog.ionelmc.ro/2015/02/09/understanding-python-metaclasses/)
+- [Ramblings about data-structures](https://blog.ionelmc.ro/2014/09/22/ramblings-about-data-structures/)
+- [Python's super() considered super!](https://rhettinger.wordpress.com/2011/05/26/super-considered-super/)
+- [Python Classes and Interfaces](https://thepythonguru.com/python-classes-and-interfaces/)
+- [Inheritance and Composition: A Python OOP Guide](https://realpython.com/inheritance-composition-python/#implementation-inheritance-vs-interface-inheritance)
+- [Python's map(): Processing Iterables Without a Loop](https://realpython.com/python-map-function/)
 
 ## Videos and Channels
 
