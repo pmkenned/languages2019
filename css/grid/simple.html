@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>CSS Grid</title>
+        <style>
+
+.item-a {
+    border: 10px solid blue;
+    grid-area: toprow;
+}
+
+.item-b {
+    border: 10px solid orange;
+    grid-area: middleleft;
+}
+
+.item-c {
+    border: 10px solid purple;
+    grid-area: middleright;
+}
+
+.item-d {
+    border: 10px solid green;
+    grid-area: bottomrow;
+}
+
+.container {
+    border: 10px solid red;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    /* grid-template-columns: auto; */
+    /* grid-template-rows: auto; */
+    grid-gap: 1rem;
+    grid-template-areas:
+        "toprow toprow"
+        "middleleft middleright"
+        "bottomrow bottomrow ";
+}
+
+.container > div {
+    background: hsl(240, 50%, 80%);
+}
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <div class="container">
+                <div class="item-a">item-a</div>
+                <div class="item-b">item-b</div>
+                <div class="item-c">item-c</div>
+                <div class="item-d">item-d</div>
+            </div>
+        </main>
+    </body>
+
+</html>

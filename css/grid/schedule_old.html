@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>CSS Grid</title>
+        <style>
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+main {
+    display: grid;
+    grid-template-rows: 1fr repeat(12, 2fr);
+    grid-template-columns: 1fr repeat(7, 2fr);
+    height: 100vh;
+    /*grid-auto-flow: column;*/
+}
+.day {
+    grid-row: 1;
+}
+.hour_col {
+    grid-column: 1;
+}
+.hour, .hour_col {
+    border-top: 1px dotted gray;
+    border-left: 1px dotted gray;
+}
+div {
+}
+.sun {
+    grid-column: 2;
+}
+.mon {
+    grid-column: 3;
+}
+.tue {
+    grid-column: 4;
+}
+.wed {
+    grid-column: 5;
+}
+.thu {
+    grid-column: 6;
+}
+.fri {
+    grid-column: 7;
+}
+.sat {
+    grid-column: 8;
+}
+.h8 {
+    grid-row: 2;
+}
+.h9 {
+    grid-row: 3;
+}
+.h10 {
+    grid-row: 4;
+}
+.h11 {
+    grid-row: 5;
+}
+.h12 {
+    grid-row: 6;
+}
+.h1 {
+    grid-row: 7;
+}
+.h2 {
+    grid-row: 8;
+}
+.h3 {
+    grid-row: 9;
+}
+.h4 {
+    grid-row: 10;
+}
+.h5 {
+    grid-row: 11;
+}
+.h6 {
+    grid-row: 12;
+}
+.h7 {
+    grid-row: 13;
+}
+        </style>
+    </head>
+
+    <body>
+        <main id="myMain">
+
+        <div class="hour_col h8">8am</div>
+        <div class="hour_col h9">9am</div>
+        <div class="hour_col h10">10am</div>
+        <div class="hour_col h11">11am</div>
+        <div class="hour_col h12">12pm</div>
+        <div class="hour_col h1">1pm</div>
+        <div class="hour_col h2">2pm</div>
+        <div class="hour_col h3">3pm</div>
+        <div class="hour_col h4">4pm</div>
+        <div class="hour_col h5">5pm</div>
+        <div class="hour_col h6">6pm</div>
+        <div class="hour_col h7">7pm</div>
+
+        <div class="sun day">Sunday</div>
+        <div class="sun hour h8"></div>
+        <div class="sun hour h9"></div>
+        <div class="sun hour h10"></div>
+        <div class="sun hour h11"></div>
+        <div class="sun hour h12"></div>
+        <div class="sun hour h1"></div>
+        <div class="sun hour h2"></div>
+        <div class="sun hour h3"></div>
+        <div class="sun hour h4"></div>
+        <div class="sun hour h5"></div>
+        <div class="sun hour h6"></div>
+        <div class="sun hour h7"></div>
+
+        <div class="mon day">Monday</div>
+        <div class="mon hour h8"></div>
+        <div class="mon hour h9"></div>
+        <div class="mon hour h10"></div>
+        <div class="mon hour h11"></div>
+        <div class="mon hour h12"></div>
+        <div class="mon hour h1"></div>
+        <div class="mon hour h2"></div>
+        <div class="mon hour h3"></div>
+        <div class="mon hour h4"></div>
+        <div class="mon hour h5"></div>
+        <div class="mon hour h6"></div>
+        <div class="mon hour h7"></div>
+
+        <div class="tue day">Tuesday</div>
+        <div class="tue hour h8"></div>
+        <div class="tue hour h9"></div>
+        <div class="tue hour h10"></div>
+        <div class="tue hour h11"></div>
+        <div class="tue hour h12"></div>
+        <div class="tue hour h1"></div>
+        <div class="tue hour h2"></div>
+        <div class="tue hour h3"></div>
+        <div class="tue hour h4"></div>
+        <div class="tue hour h5"></div>
+        <div class="tue hour h6"></div>
+        <div class="tue hour h7"></div>
+
+        <div class="wed day">Wednesday</div>
+        <div class="wed hour h8"></div>
+        <div class="wed hour h9"></div>
+        <div class="wed hour h10"></div>
+        <div class="wed hour h11"></div>
+        <div class="wed hour h12"></div>
+        <div class="wed hour h1"></div>
+        <div class="wed hour h2"></div>
+        <div class="wed hour h3"></div>
+        <div class="wed hour h4"></div>
+        <div class="wed hour h5"></div>
+        <div class="wed hour h6"></div>
+        <div class="wed hour h7"></div>
+
+        <div class="thu day">Thursday</div>
+        <div class="thu hour h8"></div>
+        <div class="thu hour h9"></div>
+        <div class="thu hour h10"></div>
+        <div class="thu hour h11"></div>
+        <div class="thu hour h12"></div>
+        <div class="thu hour h1"></div>
+        <div class="thu hour h2"></div>
+        <div class="thu hour h3"></div>
+        <div class="thu hour h4"></div>
+        <div class="thu hour h5"></div>
+        <div class="thu hour h6"></div>
+        <div class="thu hour h7"></div>
+
+        <div class="fri day">Friday</div>
+        <div class="fri hour h8"></div>
+        <div class="fri hour h9"></div>
+        <div class="fri hour h10"></div>
+        <div class="fri hour h11"></div>
+        <div class="fri hour h12"></div>
+        <div class="fri hour h1"></div>
+        <div class="fri hour h2"></div>
+        <div class="fri hour h3"></div>
+        <div class="fri hour h4"></div>
+        <div class="fri hour h5"></div>
+        <div class="fri hour h6"></div>
+        <div class="fri hour h7"></div>
+
+        <div class="sat day">Saturday</div>
+        <div class="sat hour h8"></div>
+        <div class="sat hour h9"></div>
+        <div class="sat hour h10"></div>
+        <div class="sat hour h11"></div>
+        <div class="sat hour h12"></div>
+        <div class="sat hour h1"></div>
+        <div class="sat hour h2"></div>
+        <div class="sat hour h3"></div>
+        <div class="sat hour h4"></div>
+        <div class="sat hour h5"></div>
+        <div class="sat hour h6"></div>
+        <div class="sat hour h7"></div>
+
+        </main>
+    <script>
+        const main = document.getElementById('myMain');
+    </script>
+    </body>
+
+</html>
