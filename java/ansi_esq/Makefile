@@ -14,4 +14,4 @@ perf: all
 	./do_n.sh 10
 
 clean:
-	rm -f *.class
+	rm *.class
