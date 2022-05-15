@@ -1,3 +1,13 @@
+// https://www.cse.psu.edu/~kxc104/class/cse472/09s/hw/hw7/vt100ansi.htm
+// https://jonisalonen.com/2012/calling-c-from-java-is-easy/
+// https://www.baeldung.com/jni
+// https://www.infoworld.com/article/2077554/java-tip-54--returning-data-in-reference-arguments-via-jni.html
+// https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html
+// https://docs.oracle.com/javase/7/docs/technotes/guides/jni/spec/functions.html
+// https://docs.oracle.com/javase/1.5.0/docs/guide/jni/spec/types.html
+// https://docs.oracle.com/javase/8/docs/technotes/guides/jni/spec/design.html
+// https://stackoverflow.com/questions/24641536/how-to-set-java-home-in-linux-for-all-users
+
 #include "tty_TTYUtil.h"
 #include <stdlib.h>
 #include <termios.h>
@@ -76,6 +86,7 @@ JNIEXPORT jint JNICALL Java_tty_TTYUtil_tcgetattr
     fid = env->GetFieldID(termiosClass, "LFlag", "I");
     env->SetIntField(termios, fid, t.c_lflag);
 
+    // https://stackoverflow.com/questions/1086596/how-to-access-arrays-within-an-object-with-jni
     //fid = env->GetFieldID(termiosClass, "CC", "[I");
     //env->SetIntField(termios, fid, t.c_cc);
 

@@ -21,6 +21,7 @@ filetype indent plugin on
 
 silent e Makefile
 silent tabe JEdit.java
+silent tabe AnsiEsc.java
 silent tabe tty/Termios.java
 silent tabe tty/TTYUtil.java
 silent tabe tty_TTYUtil.cpp

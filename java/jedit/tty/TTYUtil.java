@@ -1,5 +1,11 @@
 package tty;
 
+// TODO: finish tcgetattr and tcsetattr so that they can be used this way:
+//  Termios raw = new Termios();
+//  TTYUtil.tcgetattr(STDIN_FILENO, raw);
+//  raw.LFlag &= ~(Termios.ECHO);
+//  TTYUtil.tcsetattr(STDIN_FILENO, Termios.TCSAFLUSH, raw);
+
 public class TTYUtil {
     static { System.loadLibrary("ttyutil"); }
     public static native boolean isTTY();
