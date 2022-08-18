@@ -1,6 +1,13 @@
 # languages2019
 Practicing programming languages
 
+List of simple programming exercises to practice:
+
+- Hello, world
+- Sort, search
+- Count words in file
+- Create bitmap file, shapes, splines, resize, etc.
+
 Top Ranking:
 * Jai
 * Zig
