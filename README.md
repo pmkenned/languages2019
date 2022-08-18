@@ -2,49 +2,54 @@
 Practicing programming languages
 
 Top Ranking:
+* Jai
+* Zig
+* Odin
+* Rust
+* Go
+* Forth
 * Haskell
 * Python
 * JavaScript
 * C++
 * Scala
-* Java
 
 Close contenders:
+* Common Lisp
+* Racket
+* Lua
 * OCaml
-* Rust
-* Go
 * Clojure
-* Zig
+* Ruby
+* Java
 * Julia
 * awk
-* Jai
 * PHP
-* Ruby
 * C#
 * Kotlin
 * Elm
 * ReasonML
 * Standard ML
-* Lua
-* F#
 * PL/SQL
 * C
 
 Others:
+* Swift
+* Beef
+* V
+* Pharo
+* Delphi Pascal
 * Vim Script
 * TypeScript
 * Bash
 * Nim
 * D
-* R
-* Swift
-* Elixir
 * Erlang
-* Pharo
+* F#
+* R
+* Elixir
 * Scheme
-* Common Lisp
 * Dart
-* Delphi Pascal
 * Perl 5
 * Perl 6
 * Prolog
@@ -55,7 +60,6 @@ Others:
 * Crystal
 * Groovy
 * Emacs Lisp
-* Racket
 * Ballerina
 * CFML
 * Objective-C
