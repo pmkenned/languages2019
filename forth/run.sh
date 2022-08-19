@@ -1,5 +1,5 @@
 #!/bin/bash
 
-FILE=${1:-hello.fs}
+FILE=${1:-fib.fs}
 
 gforth $FILE -e bye
