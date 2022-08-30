@@ -9,9 +9,11 @@
 (defvar *db* nil)
 (defun add-record (cd) (push cd *db*))
 
+;(defun dump-db ()
+;  (dolist (cd *db*)
+;    (format t "~{~a:~10t~a~%~}~%" cd)))
 (defun dump-db ()
-  (dolist (cd *db*)
-    (format t "~{~a:~10t~a~%~}~%" cd)))
+  (format t "~{~{~a:~10t~a~%~}~%~}" *db*))
 
 (add-record (make-cd "Roses" "Kathy Mattea" 7 t))
 (add-record (make-cd "Fly" "Dixie Chicks" 8 t))
