@@ -6,7 +6,7 @@ all: RVSim.class
 	scalac $<
 
 run: all
-	scala RVSim
+	scala RVSim insert_sort.hex
 
 clean:
 	rm -f *.class
